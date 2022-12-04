@@ -1,0 +1,20 @@
+<html>
+<script>
+  const url = 'https://script.googleusercontent.com/macros/echo?user_content_key=P-GkNR2i-CQKhA3BEpseR1M5ImjrFQAOvW639u6jUgS8Qob-vRqrWYmTK2JLKYPeLSQqbLWm-vnvMWumIN7ulSSQrjsWAo2wm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnMWKhNF2lkFm8Mp04wJJsrPPrcxwymROB4-mw4nZfC223mdN7K4r-7KjpkrwO58cd9BaJB50CetCZMmyjOivSWMSGuNs1bAicQ&lib=MuzXAn8Ujs7kafX0p3Db9Y4EDlfBAFrHw'
+  fetch(url)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error();
+      }
+      return response.json(); // あるいは response.json()
+    })
+    .then((json) => {
+      console.log(json)
+    })
+    .catch((reason) => {
+      // エラー
+      console.log(reason)
+    });
+</script>
+
+</html>
